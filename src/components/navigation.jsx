@@ -11,6 +11,11 @@ function Navigation() {
                             Home
                         </Link>
                     </li>
+                    <li>
+                        <Link to='/work'>
+                            Work
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </div>
