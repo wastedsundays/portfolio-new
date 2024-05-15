@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react';
 import Loading from "../components/loading";
+import ErrorPage from "./ErrorPage";
 import { REST_PATH } from "../globals/globals";
 
 const SinglePage = () => {
@@ -13,6 +14,7 @@ const SinglePage = () => {
     const [isLoaded, setLoadStatus] = useState(false)
     const [toolsData, setToolsData] = useState([])
 
+    //get API data for work post
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(restPath)
@@ -28,6 +30,7 @@ const SinglePage = () => {
         fetchData()
     }, [restPath])
 
+    // check each work tool and find the matching image
     useEffect(() => {
         const fetchToolsData = async () => {
             const response = await fetch('https://wastedsundays.com/adamhdesign/wp-json/wp/v2/ahdesigns-tools?acf_format=standard&per_page=100')
@@ -47,10 +50,10 @@ const SinglePage = () => {
 
 
     return (
-
-        <div>
-{isLoaded ? (
-                
+        <>
+    <div>
+        {isLoaded ? (
+            restData.length > 0 ? ( // Check if restData is not empty
                 <div>
                     {restData[0].featured_images['2048x2048'] && (
                         <img srcSet={restData[0].featured_images['2048x2048'].srcset}/>
@@ -94,10 +97,15 @@ const SinglePage = () => {
 
                 </div>
             ) : (
-                <Loading />
-            )}
+                <ErrorPage />
+            )
+        ) : (
+            <Loading />
+        )}
 
-        </div>
+    </div>
+</>
+
 
 
     )
