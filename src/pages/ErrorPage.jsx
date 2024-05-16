@@ -1,10 +1,12 @@
-
+import errorImageWhite from '../images/error-image-white.jpg'
 const ErrorPage = () => {
     
     return  (
     <>
         <div>Error: Not Found</div>
-        <div>This is my 404 page</div>
+        <div>Well, this is embarassing</div>
+        <img src={errorImageWhite}  />
+        
     </>
         
 
