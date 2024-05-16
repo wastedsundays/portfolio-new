@@ -11,6 +11,15 @@ li a {
   color: green;
 }
 
+.filter-item {
+  width: 60px;
+  height: 88px;
+}
+
+section {
+  min-height: 100vh;
+}
+
 
 
 .loader {
