@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react';
 import Loading from "../components/loading";
+import ContactForm from "../components/contactform";
 import ErrorPage from "./ErrorPage";
 import { REST_PATH } from "../globals/globals";
 
@@ -82,11 +83,6 @@ const SinglePage = () => {
                         </div>
                     )}
 
-                    <Link to='../contact'>
-                        <button>
-                            Contact
-                        </button>
-                    </Link>
                     <Link to='../work'>
                         <button>
                             Back
@@ -94,6 +90,8 @@ const SinglePage = () => {
                     </Link>
 
                     {/* <OtherProjects /> */}
+                    <h2>Get In Touch</h2>
+                    <ContactForm />
 
                 </div>
             ) : (

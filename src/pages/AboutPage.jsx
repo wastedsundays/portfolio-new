@@ -1,5 +1,6 @@
 import Tools from "../components/tools"
 import Loading from "../components/loading";
+import ContactForm from "../components/contactform";
 import { useState, useEffect } from 'react';
 import { REST_PATH } from "../globals/globals";
 
@@ -56,6 +57,10 @@ const AboutPage = () => {
                     <h2>{`What I've Learned`}</h2>
                     <p>ACF repeater field</p>
                 </div>
+            </section>
+            <section>
+                    <h2>Hello!</h2>
+                    <ContactForm />
             </section>
 
 
