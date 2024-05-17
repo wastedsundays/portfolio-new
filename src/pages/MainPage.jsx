@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom'
+import ContactForm from "../components/contactform"
 
 function MainPage() {
     return (
@@ -24,7 +25,7 @@ function MainPage() {
             <section>
                 <div>
                     <h2>Contact</h2>
-                    <p>put the first instance of the contact form here</p>
+                    <ContactForm />
                 </div>
             </section>
         </div>

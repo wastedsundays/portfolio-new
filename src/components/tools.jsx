@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Isotope from 'isotope-layout';
+/* eslint-disable react/prop-types */
 
   const Tools = (props) => {
 

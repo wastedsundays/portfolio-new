@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Loading from "../components/loading";
 import ContactForm from "../components/contactform";
 import ErrorPage from "./ErrorPage";
+import OtherWork from "../components/otherwork";
 import { REST_PATH } from "../globals/globals";
 
 const SinglePage = () => {
@@ -89,7 +90,7 @@ const SinglePage = () => {
                         </button>
                     </Link>
 
-                    {/* <OtherProjects /> */}
+                    <OtherWork />
                     <h2>Get In Touch</h2>
                     <ContactForm />
 

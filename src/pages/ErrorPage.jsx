@@ -3,7 +3,7 @@ const ErrorPage = () => {
     
     return  (
     <>
-        <div>Error: Not Found</div>
+        <h1>404</h1>
         <div>Well, this is embarassing</div>
         <img src={errorImageWhite}  />
         
