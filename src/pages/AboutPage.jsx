@@ -1,25 +1,14 @@
-import Tools from "../components/tools"
-import Loading from "../components/loading";
+// import Tools from "../components/tools"
+// import Loading from "../components/loading";
+import Toolbox from "../components/toolbox";
 import ContactForm from "../components/contactform";
-import { useState, useEffect } from 'react';
-import { REST_PATH } from "../globals/globals";
+// import { useState, useEffect } from 'react';
+// import { REST_PATH } from "../globals/globals";
 
 
 
 const AboutPage = () => {
-    const [apiData, setApiData] = useState(null);
-    useEffect (() => {
-        //Fetch API Data
-        fetch(`${ REST_PATH }ahdesigns-tools?acf_format=standard&filter[orderby]=slug&order=asc&per_page=100`)
-            .then(response => response.json())
-            .then(data => {
-                //Set API Data in State
-                setApiData(data);
-            })
-            .catch(error => {
-                console.error('Error fetching data;', error);
-            });
-        }, [])
+
     return (
         <div className=''>
             <section>
@@ -37,13 +26,9 @@ const AboutPage = () => {
                     <h2>What I Work With</h2>
                     <p>Heres what I use to get things done</p>
                 </div>
+
                 <div>
-                    {apiData ? (
-                        // Render Tools with API data as prop
-                        <Tools data={apiData} />
-                        ) : (
-                        <Loading />
-                    )}
+                    <Toolbox />
                 </div>
             </section>
             <section>
