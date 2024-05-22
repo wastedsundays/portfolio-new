@@ -20,7 +20,6 @@ import Isotope from 'isotope-layout';
     }, [])
     
 
-  
     // handling filter key change
     useEffect(() => {
       filterKey === '*'

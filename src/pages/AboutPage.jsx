@@ -6,10 +6,8 @@ import { REST_PATH } from "../globals/globals";
 
 
 
-
 const AboutPage = () => {
     const [apiData, setApiData] = useState(null);
-
     useEffect (() => {
         //Fetch API Data
         fetch(`${ REST_PATH }ahdesigns-tools?acf_format=standard&filter[orderby]=slug&order=asc&per_page=100`)
@@ -22,22 +20,18 @@ const AboutPage = () => {
                 console.error('Error fetching data;', error);
             });
         }, [])
-
     return (
         <div className=''>
             <section>
                 <h1>Hello From the About Page</h1>
                 <p>This page will be the about me bio, the skills section, and the education section</p>
             </section>
-
             <section>
                 <div>
                     <h2>Bio</h2>
                     <p>Some words about me</p>
-
                 </div>
             </section>
-
             <section>
                 <div>
                     <h2>What I Work With</h2>
@@ -64,9 +58,7 @@ const AboutPage = () => {
             </section>
 
 
-
         </div>
     )
 }
-
 export default AboutPage
