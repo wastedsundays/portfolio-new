@@ -7,17 +7,17 @@ const Navigation = () => {
 
     useEffect(() => {
         // Determine the active tab index based on the current location pathname
-        switch (location.pathname) {
-            case '/':
+        switch (true) {
+            case location.pathname === '/':
                 setActiveTab(0);
                 break;
-            case '/work':
+            case location.pathname.startsWith('/work'):
                 setActiveTab(1);
                 break;
-            case '/about':
+            case location.pathname === '/about':
                 setActiveTab(2);
                 break;
-            case '/contact':
+            case location.pathname === '/contact':
                 setActiveTab(3);
                 break;
             default:
@@ -28,6 +28,9 @@ const Navigation = () => {
 
     return (
         <>
+            <div>
+                <button>Menu</button>
+            </div>
             <div>
                 <nav>
                     <ul>
