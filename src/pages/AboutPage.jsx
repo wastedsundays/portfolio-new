@@ -1,13 +1,32 @@
 // import Tools from "../components/tools"
-// import Loading from "../components/loading";
+import Loading from "../components/loading";
 import Toolbox from "../components/toolbox";
 import ContactForm from "../components/contactform";
-// import { useState, useEffect } from 'react';
-// import { REST_PATH } from "../globals/globals";
+import { useState, useEffect } from 'react';
+import { REST_PATH } from "../globals/globals";
 
 
 
 const AboutPage = () => {
+
+    const aboutRestPath = `${ REST_PATH }pages/104`
+
+    const [restAboutData, setAboutData] = useState ([])
+    const [aboutLoaded, setAboutLoaded] = useState (false)
+
+    useEffect(() => {
+        const fetchAbout = async () => {
+            const response = await fetch(aboutRestPath)
+            if (response.ok) {
+                const about = await response.json()
+                setAboutData(about)
+                setAboutLoaded(true)
+            } else {
+                setAboutLoaded(false)
+            }
+        }
+        fetchAbout()
+    }, [aboutRestPath])
 
     return (
         <div className=''>
@@ -17,8 +36,10 @@ const AboutPage = () => {
             </section>
             <section>
                 <div>
-                    <h2>Bio</h2>
-                    <p>Some words about me</p>
+                    <h2>Me</h2>
+                    { aboutLoaded ? (
+                        <div dangerouslySetInnerHTML={{__html:restAboutData.content.rendered }}></div>
+                        ) : ( <Loading /> ) }
                 </div>
             </section>
             <section>
