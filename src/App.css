@@ -78,3 +78,30 @@ section {
 
 
 }
+
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  @media screen and (min-width: 900px) {
+    display: block;
+    
+  }
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  display: flex;
+}
+
+.hamburger-button {
+  @media screen and (min-width: 900px) {
+    display: none;
+    
+  }
+}

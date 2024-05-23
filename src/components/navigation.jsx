@@ -5,6 +5,11 @@ const Navigation = () => {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState(0);
 
+    const [menuStatus, setMenuStatus] = useState("")
+    const toggleMenu = () => {
+        setMenuStatus(menuStatus === "" ? "open" : "");
+    }
+
     useEffect(() => {
         // Determine the active tab index based on the current location pathname
         switch (true) {
@@ -29,10 +34,10 @@ const Navigation = () => {
     return (
         <>
             <div>
-                <button>Menu</button>
+                <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
             </div>
             <div>
-                <nav>
+                <nav className={`${menuStatus}`}>
                     <ul>
                         <li className={activeTab === 0 ? 'active-tab' : ''}>
                             <Link to='/'>

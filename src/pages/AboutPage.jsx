@@ -1,4 +1,3 @@
-// import Tools from "../components/tools"
 import Loading from "../components/loading";
 import Toolbox from "../components/toolbox";
 import ContactForm from "../components/contactform";
