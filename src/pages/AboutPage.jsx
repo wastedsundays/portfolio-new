@@ -31,13 +31,15 @@ const AboutPage = () => {
         <div className=''>
             <section>
                 <h1>Hello From the About Page</h1>
-                <p>This page will be the about me bio, the skills section, and the education section</p>
             </section>
             <section>
                 <div>
-                    <h2>Me</h2>
-                    { aboutLoaded ? (
+                { aboutLoaded ? (
+                        <div>
+                        <h2>{restAboutData.title.rendered}</h2>
+                    
                         <div dangerouslySetInnerHTML={{__html:restAboutData.content.rendered }}></div>
+                        </div>
                         ) : ( <Loading /> ) }
                 </div>
             </section>

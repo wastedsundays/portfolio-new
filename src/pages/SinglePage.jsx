@@ -73,7 +73,7 @@ const SinglePage = () => {
 
                     {restData[0].acf.work_tools && restData[0].acf.work_tools.length > 0 && (
                         <div>
-                            <h3 style={{color: restData[0].acf.project_primary_color}}>How It Was Made</h3>
+                            <h3 style={{color: restData[0].acf.project_primary_color}}>Toolbox</h3>
                             {restData[0].acf.work_tools.map((tool, i) => (
                                 <div key={i}>
                                     <div className={tool.post_title}>                                     
@@ -90,7 +90,7 @@ const SinglePage = () => {
                         </button>
                     </Link>
 
-                    <OtherWork />
+                    <OtherWork id={restData[0].id}/>
                     <h2>Get In Touch</h2>
                     <ContactForm />
 
