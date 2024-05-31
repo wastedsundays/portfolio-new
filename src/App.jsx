@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/scrollToTop'
 
 import Navigation from './components/navigation'
 import MainPage from './pages/MainPage'
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path='/'  element={<Navigation />}>
           <Route index element={<MainPage />} />
