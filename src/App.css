@@ -105,3 +105,21 @@ nav ul {
     
   }
 }
+
+/* home page sections */
+
+
+
+
+/* other projects component */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 20% 30% 20%;
+
+
+}
+
+.projects-container img {
+  width: 100%;
+}

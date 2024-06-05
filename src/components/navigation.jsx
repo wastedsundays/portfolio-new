@@ -33,39 +33,41 @@ const Navigation = () => {
 
     return (
         <>
-            <div>
-                <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
-            </div>
-            <div>
-                <nav className={`${menuStatus}`}>
-                    <ul>
-                        <li className={activeTab === 0 ? 'active-tab' : ''}>
-                            <Link to='/'>
-                                Home
-                            </Link>
-                        </li>
-                        <li className={activeTab === 1 ? 'active-tab' : ''}>
-                            <Link to='/work'>
-                                Work
-                            </Link>
-                        </li>
-                        <li className={activeTab === 2 ? 'active-tab' : ''}>
-                            <Link to='/about'>
-                                About
-                            </Link>
-                        </li>
-                        <li className={activeTab === 3 ? 'active-tab' : ''}>
-                            <Link to='/contact'>
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
+            <header>
+                <div>
+                    <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
+                </div>
+                <div>
+                    <nav className={`${menuStatus}`}>
+                        <ul>
+                            <li className={activeTab === 0 ? 'active-tab' : ''}>
+                                <Link to='/'>
+                                    Home
+                                </Link>
+                            </li>
+                            <li className={activeTab === 1 ? 'active-tab' : ''}>
+                                <Link to='/work'>
+                                    Work
+                                </Link>
+                            </li>
+                            <li className={activeTab === 2 ? 'active-tab' : ''}>
+                                <Link to='/about'>
+                                    About
+                                </Link>
+                            </li>
+                            <li className={activeTab === 3 ? 'active-tab' : ''}>
+                                <Link to='/contact'>
+                                    Contact
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
                 {/* Render the content based on the current route */}
                 <Outlet />
-            </div>
+            </main>
         </>
     );
 }

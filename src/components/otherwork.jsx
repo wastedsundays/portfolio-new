@@ -59,7 +59,9 @@ const OtherWork = ({ id }) => {
 
             {isOtherLoaded && randomProjects.length > 0 ? (
                 <div>
-                    <h2>Heres More From Me</h2>
+                    {/* <h2>Heres More From Me</h2>
+                    // this should only appear on the projects page, not on the home page */}
+                    <div className='projects-container'>
                     {randomProjects.map((project, i) => (
                         <div className={`project`} key={i}>
                         
@@ -71,6 +73,8 @@ const OtherWork = ({ id }) => {
                             </Link>
                         </div>
                     ))}
+                    <Link to={`/work/`}><p>See More</p></Link>
+                    </div>
                 </div>
             ) :  isOtherLoaded && randomProjects.length === 0 ? (
                 <p>There are no featured projects to display</p>
@@ -82,7 +86,7 @@ const OtherWork = ({ id }) => {
 };
 
 OtherWork.propTypes = {
-    id: PropTypes.number.isRequired
+    id: PropTypes.number
 }
 
 export default OtherWork
