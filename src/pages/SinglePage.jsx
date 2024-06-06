@@ -66,6 +66,17 @@ const SinglePage = () => {
                     {restData[0].acf.project_description && (
                         <p>{restData[0].acf.project_description}</p>
                     )}
+
+                    {/* these buttons will be hidden if there's no link. Need to create ACF in WP for each */}
+                        <button>
+                            See It
+                        </button>
+                        <button>
+                            Git
+                        </button>
+                        <button>
+                            Design
+                        </button>
                     
                     
                     <div dangerouslySetInnerHTML={{__html:restData[0].content.rendered }}></div>
@@ -89,6 +100,7 @@ const SinglePage = () => {
                             Back
                         </button>
                     </Link>
+
 
                     <OtherWork id={restData[0].id}/>
                     <h2>Get In Touch</h2>

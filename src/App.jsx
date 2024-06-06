@@ -9,14 +9,19 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ErrorPage from './pages/ErrorPage'
 
+import { EmailProvider } from './components/emailcontext'
+
+
 import './App.css'
 
 function App() {
 
   return (
     <>
+    <EmailProvider>
     <BrowserRouter>
     <ScrollToTop />
+
       <Routes>
         <Route path='/'  element={<Navigation />}>
           <Route index element={<MainPage />} />
@@ -27,7 +32,9 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
         </Route>
       </Routes>
+
     </BrowserRouter>
+    </EmailProvider>
     </>
   )
 }

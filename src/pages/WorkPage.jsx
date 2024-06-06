@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { REST_PATH } from '../globals/globals';
 import Loading from '../components/loading';
+import ContactForm from '../components/contactform';
 
 const WorkPage = () => {
 
@@ -46,6 +47,7 @@ const WorkPage = () => {
                     <Loading />
                 }
             </div>
+            <ContactForm />
         </div>
 
       )
