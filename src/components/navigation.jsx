@@ -1,5 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Footer from './footer';
 
 const Navigation = () => {
     const location = useLocation();
@@ -68,6 +69,7 @@ const Navigation = () => {
                 {/* Render the content based on the current route */}
                 <Outlet />
             </main>
+            <Footer />
         </>
     );
 }
