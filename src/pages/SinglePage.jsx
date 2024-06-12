@@ -67,17 +67,23 @@ const SinglePage = () => {
                         <p>{restData[0].acf.project_description}</p>
                     )}
 
-                    {/* these buttons will be hidden if there's no link. Need to create ACF in WP for each */}
-                        <button>
+                    {/* BUTTONS */}
+                    {restData[0].acf.live_project_site && 
+                        (<a href={restData[0].acf.live_project_site}>
                             See It
-                        </button>
-                        <button>
+                        </a>)
+                        }
+                    {restData[0].acf.project_repo && 
+                        (<a href={restData[0].acf.project_repo}>
                             Git
-                        </button>
-                        <button>
+                        </a>)
+                        }
+                    {restData[0].acf.project_design && 
+                        (<a href={restData[0].acf.project_design}>
                             Design
-                        </button>
-                    
+                        </a>)
+                        }
+                    {/* END BUTTONS */}
                     
                     <div dangerouslySetInnerHTML={{__html:restData[0].content.rendered }}></div>
                     
