@@ -2,6 +2,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Footer from './footer';
 
+
 const Navigation = () => {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState(0);
@@ -64,6 +65,7 @@ const Navigation = () => {
                         </ul>
                     </nav>
                 </div>
+
             </header>
             <main>
                 {/* Render the content based on the current route */}
