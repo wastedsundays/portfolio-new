@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "Edo";
+  src: local("Edo"),
+  url("./fonts/edo-webfont.woff") format("woff");
+}
+
 li {
   list-style: none;
 }
 
 li a {
   text-decoration: none;
-  color: red
+  color: red;
+  font-family: 'Edo';
+  font-size: 36px;
+  padding: 0 10px;
 }
 
 .active-tab a {
@@ -22,6 +34,25 @@ section {
 
 body {
   margin: 0;
+  font-family: 'Inter';
+  
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+h1 {
+  font-family: 'Edo';
+  font-size: 100px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Edo';
+  font-size: 50px;
+  margin: 0;
+  font-weight: 300;
 }
 
 
