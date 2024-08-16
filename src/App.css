@@ -7,21 +7,21 @@
   url("./fonts/edo-webfont.woff") format("woff");
 }
 
-body.light {
+html.light {
   background-color: #fff;
   color: #000;
 }
 
-body.dark {
+html.dark {
   background-color: #333;
   color: #fff;
 }
 
-body.dark a {
+html.dark a {
   color: #fff;
 }
 
-body.dark .filter-item {
+html.dark .filter-item {
   filter: opacity(.9);
 }
 

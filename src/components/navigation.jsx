@@ -40,8 +40,7 @@ const Navigation = () => {
                 <div>
                     <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
                 </div>
-                <div><ThemeToggle />
-                </div>
+
                 <div>
                     <nav className={`${menuStatus}`}>
                         <ul>
@@ -65,6 +64,7 @@ const Navigation = () => {
                                     Contact
                                 </Link>
                             </li>
+                            <ThemeToggle />
                         </ul>
                     </nav>
                 </div>
