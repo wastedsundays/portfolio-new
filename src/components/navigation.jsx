@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Footer from './footer';
+import ThemeToggle from './ThemeToggle';
 
 
 const Navigation = () => {
@@ -38,6 +39,8 @@ const Navigation = () => {
             <header>
                 <div>
                     <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
+                </div>
+                <div><ThemeToggle />
                 </div>
                 <div>
                     <nav className={`${menuStatus}`}>

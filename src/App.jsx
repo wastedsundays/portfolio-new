@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage'
 import ErrorPage from './pages/ErrorPage'
 
 import { EmailProvider } from './components/emailcontext'
+import { ThemeProvider } from './components/theme'
 
 
 import './App.css'
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+    <ThemeProvider>
     <EmailProvider>
     <BrowserRouter>
     <ScrollToTop />
@@ -36,6 +38,7 @@ function App() {
 
     </BrowserRouter>
     </EmailProvider>
+    </ThemeProvider>
     </>
   )
 }
