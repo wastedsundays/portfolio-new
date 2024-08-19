@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
-  console.log(pathname);
   useEffect(() => {
     // if (!pathname.startsWith("/work/*")) {
     window.scrollTo(0, 0);

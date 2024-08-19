@@ -14,6 +14,7 @@ const ContactForm = () => {
 
     return (
         <div className='contact-form'>
+            <h2>Contact</h2>
             {emailSent ? (
                 <p>Thanks for your message! I will be in touch. If you have a second message you need to send, refresh the page.</p>
             ) : (

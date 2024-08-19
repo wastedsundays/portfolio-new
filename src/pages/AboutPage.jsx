@@ -60,7 +60,6 @@ const AboutPage = () => {
                 </div>
             </section>
             <section>
-                    <h2>Hello!</h2>
                     <ContactForm />
             </section>
 
