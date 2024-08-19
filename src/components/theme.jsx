@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
     useEffect(() => {
         // Save the theme in localStorage
         localStorage.setItem('adamh-theme', theme);
-        // Apply the theme to the body
+        // Apply the theme
         // document.body.className = theme;
         document.documentElement.className = theme;
     }, [theme]);

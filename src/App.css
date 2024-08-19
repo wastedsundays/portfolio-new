@@ -12,7 +12,7 @@ html.light {
   color: #000;
 }
 
-html.dark {
+.dark {
   background-color: #333;
   color: #fff;
 }
@@ -25,13 +25,6 @@ html.dark .filter-item {
   filter: opacity(.9);
 }
 
-body {
-  transition: all .5s ease-in-out;
-}
-
-:root {
-  background-color: #333;
-}
 
 li {
   list-style: none;
