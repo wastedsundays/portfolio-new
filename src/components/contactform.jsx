@@ -18,15 +18,23 @@ const ContactForm = () => {
             {emailSent ? (
                 <p>Thanks for your message! I will be in touch. If you have a second message you need to send, refresh the page.</p>
             ) : (
-                <form onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="text" name="user_name" />
-                    <label>Email</label>
-                    <input type="email" name="user_email" />
-                    <label>Message</label>
-                    <textarea name="message" />
-                    <input type="submit" value="Send" />
-                </form>
+<form onSubmit={sendEmail}>
+    <div>
+        <label htmlFor="user_name">Name</label>
+        <input type="text" id="user_name" name="user_name" aria-required="true" />
+    </div>
+    <div>
+        <label htmlFor="user_email">Email</label>
+        <input type="email" id="user_email" name="user_email" aria-required="true" />
+    </div>
+    <div>
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" aria-required="true"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Send" />
+    </div>
+</form>
             )}
         </div>
     );

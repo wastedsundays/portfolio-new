@@ -109,7 +109,6 @@ const SinglePage = () => {
 
 
                     <OtherWork id={restData[0].id}/>
-                    <h2>Get In Touch</h2>
                     <ContactForm />
 
                 </div>
