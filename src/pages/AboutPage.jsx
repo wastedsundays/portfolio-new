@@ -28,7 +28,7 @@ const AboutPage = () => {
     }, [aboutRestPath])
 
     return (
-        <div className=''>
+        <div className='about-page'>
             <section>
                 <h1>Hello From the About Page</h1>
             </section>

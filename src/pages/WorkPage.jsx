@@ -27,9 +27,8 @@ const WorkPage = () => {
 
       return (
 
-        <div>
-            <h1>Hello From the Work Page</h1>
-            <p>This will show all the projects, with links to the individual project page for each, along with link to the actual website</p>
+        <div className='work-page'>
+            <h1>My Work</h1>
             <div>
                 { isLoaded ?
                     <div>

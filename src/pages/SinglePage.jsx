@@ -53,7 +53,7 @@ const SinglePage = () => {
 
     return (
         <>
-    <div>
+    <div className="project-page">
         {isLoaded ? (
             restData.length > 0 ? ( // Check if restData is not empty
                 <div>

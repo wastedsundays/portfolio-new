@@ -14,7 +14,6 @@ export const ThemeProvider = ({ children }) => {
         // Save the theme in localStorage
         localStorage.setItem('adamh-theme', theme);
         // Apply the theme
-        // document.body.className = theme;
         document.documentElement.className = theme;
     }, [theme]);
 

@@ -5,7 +5,7 @@ import Adam from '../images/new-dissolve.png';
 
 function MainPage() {
     return (
-        <div>
+        <div className='home-page'>
             <section style={{display: 'grid', gridTemplateColumns: '40% 60%', alignItems: 'center'}}>
                 <div>
                     <img style={{width: '100%'}} src={Adam}/>
