@@ -7,7 +7,7 @@
   url("./fonts/edo-webfont.woff") format("woff");
 }
 
-html.light {
+/* html.light {
   background-color: #fff;
   color: #000;
 }
@@ -23,7 +23,7 @@ html.dark a {
 
 html.dark .filter-item {
   filter: opacity(.9);
-}
+} */
 
 
 li {
@@ -32,7 +32,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
   font-family: 'Edo';
   font-size: 25px;
   padding: 0 10px;
@@ -43,8 +43,8 @@ li a:hover {
 }
 
 .active-tab a {
-  color: black;
-  filter: drop-shadow(2px 4px 10px black);
+  color: var(--primary-color);
+  filter: drop-shadow(2px 4px 10px var(--primary-color));
 }
 
 .filter-item {
@@ -262,12 +262,121 @@ button:focus {
 }
 
 :root {
-  --background: #f2f2f2;
+  /* --background: #f2f2f2; */
   /* --text-primary: #0f0f0f; */
-  --text-primary: green;
+  /* --text-primary: green;
   --text-secondary: #4e4e4e;
   --accent: #dfb017;
   --accent-hover: #cea315; 
   --border: #1f1e1e;
-  --shadow: 7px 15px 13px -4px #00000056;
+  --shadow: 7px 15px 13px -4px #00000056; */
+}
+
+:root {
+--primary-color: #302AE6;
+--secondary-color: #536390;
+--font-color: #424242;
+--bg-color: #fff;
+--heading-color: #292922;
+}
+
+.dark {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
+h1 {
+  color: var(--heading-color);
+}
+
+:root {
+  background: var(--bg-color);
+  color: var(--font-color);
+}
+
+svg {
+  /* stroke: var(--font-color); */
+  fill: var(--font-color);
+}
+
+.see-more {
+  background: #046eb4;
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 20px #333;
+}
+
+.see-more:hover {
+  background: linear-gradient(to right, #044e92, #046eb4, #057ec8, #0391dc);
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 30px #333;
+}
+
+a {text-decoration: none;}
+
+.project-card {
+  width: 100%;
+  max-width: 700px;
+  height: 450px;
+  
+
+}
+
+.project-card h3 {
+  margin: 0;
+}
+
+.project-card img {
+  width: 100%;
+  position:absolute;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-project {
+  width: 100%;
+  max-width: 700px;
+  height: 209px;
+  background: var(--primary-color);
+  grid-row: span 1;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 12px rgba(0, 0, 0, 0.12);
+
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 700px;
+  grid-auto-rows: 209px;
+  width: 85%;
+  max-width: 1450px;
+  margin: 0 auto;
+  gap: 2rem;
+  justify-content: center;
+
+  @media screen and (min-width: 1450px) {
+    grid-template-columns: repeat(auto-fill, 700px);
+    
+  }
+}
+
+.large-project {
+  position: relative;
+  grid-row: span 2;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 12px rgba(0, 0, 0, 0.12);
+
 }

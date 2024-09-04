@@ -1,6 +1,6 @@
 // import { Link } from 'react-router-dom'
 import ContactForm from '../components/contactform'
-import OtherWork from '../components/otherwork'
+import FeaturedWork from '../components/FeaturedWork';
 import Adam from '../images/new-dissolve.png';
 
 function MainPage() {
@@ -18,8 +18,7 @@ function MainPage() {
 
             </section>
             <section className='work-section'>
-                <h2>Work</h2>
-                <OtherWork />           
+                <FeaturedWork />
             </section>
             <section>
                 <div>
