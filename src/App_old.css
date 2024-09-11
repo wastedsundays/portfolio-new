@@ -351,7 +351,7 @@ a {text-decoration: none;}
 .small-project {
   width: 100%;
   max-width: 700px;
-  height: 209px;
+  height: 127px;
   background: var(--primary-color);
   grid-row: span 1;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 12px rgba(0, 0, 0, 0.12);
@@ -360,20 +360,21 @@ a {text-decoration: none;}
 
 .featured-project {
   display: grid;
-  grid-template-columns: 700px;
-  grid-auto-rows: 209px;
+  grid-template-columns: 600px;
+  grid-auto-rows: 127px;
   width: 85%;
   max-width: 1450px;
   margin: 0 auto;
   gap: 2rem;
   justify-content: center;
 
-  @media screen and (min-width: 1450px) {
-    grid-template-columns: repeat(auto-fill, 700px);
-    
-  }
+
 }
 
+@media screen and (min-width: 1450px) {
+ .featured-project { grid-template-columns: 600px 600px;}
+  
+}
 .large-project {
   position: relative;
   grid-row: span 2;

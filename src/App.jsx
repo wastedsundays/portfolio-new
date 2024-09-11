@@ -13,7 +13,8 @@ import { EmailProvider } from './components/emailcontext'
 import { ThemeProvider } from './components/theme'
 
 
-import './App.css'
+// import './App.css'
+import "./scss/styles.scss";
 import "./fonts/edo-webfont.woff";
 
 function App() {
