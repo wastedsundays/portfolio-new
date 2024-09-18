@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Edo";
+    src: local("Edo"),
+    url("../fonts/edo-webfont.woff") format("woff");
+  }
+
+/* font-sizes */
+:root {
+    --fs-h1: 5rem;
+    --fs-h1v2: 3.1rem;
+    --fs-h2: 2.2rem;
+    --fs-h3: 1.75rem;
+    --fs-h4: 1.25rem;
+    --fs-p1: 0.9rem;
+    --fs-p2: 0.75rem;
+
+
+    @media (min-width: 800px) {
+
+        --fs-h1: 8.75rem;
+        --fs-h1v2: 5rem;
+        --fs-h2: 3.1rem;
+        --fs-h3: 2.5rem;
+        --fs-h4: 2rem;
+        --fs-p1: 1rem;
+        --fs-p2: 0.9rem;
+    }
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-family: 'Edo';
+    font-weight: 100;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-family: 'Edo';
+    font-weight: 100;
+}
+

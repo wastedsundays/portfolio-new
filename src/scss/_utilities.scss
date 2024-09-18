@@ -1,0 +1,8 @@
+.flex {
+        display: flex;
+        gap: var(--gap, 1rem);
+}
+
+li {
+    list-style: none;
+}

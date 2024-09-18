@@ -10,12 +10,12 @@ const Footer = () => {
 
     return (
 
-        <footer>
-            <div>
+        <footer className='flex'>
+            <div className='copy-info'>
                 <p>&copy; {currentYear} Adam H.</p>
             </div>
-            <div>
-                <ul>
+            <div className='footer-icons'>
+                <ul className='flex'>
                     <li>
                         <a href='https://www.linkedin.com/in/adamhauck1/'>
                         <LinkedinIcon />
