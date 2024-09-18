@@ -6,3 +6,19 @@
 li {
     list-style: none;
 }
+
+ul {
+    padding-inline-start: 0;
+}
+
+
+
+
+// these are temporary to prevent pita.
+img {
+    width: 100%;
+}
+
+.featured-project {
+    width: clamp(300px,95%,1500px);
+}

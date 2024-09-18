@@ -28,7 +28,7 @@ const WorkPage = () => {
       return (
 
         <div className='work-page'>
-            <h1>My Work</h1>
+            <h1 className='fs-h1'>My Work</h1>
             <div>
                 { isLoaded ?
                     <div>
@@ -46,6 +46,7 @@ const WorkPage = () => {
                     <Loading />
                 }
             </div>
+            <h2 className='fs-h2'>Contact</h2>
             <ContactForm />
         </div>
 

@@ -6,18 +6,18 @@ import Adam from '../images/new-dissolve.png';
 function MainPage() {
     return (
         <div className='home-page'>
-            <section style={{display: 'grid', gridTemplateColumns: '40% 60%', alignItems: 'center'}}>
+            <section style={{display: 'grid', gridTemplateColumns: '40% 60%', alignItems: 'center', minHeight: '100vh'}}>
                 <div>
                     <img style={{width: '100%'}} src={Adam}/>
                 </div>
                 <div>
-                    <h1>Adam H</h1>
+                    <h1 className='fs-h1'>Adam H</h1>
                     <p>Web Developer & Other Stuff</p>
                 
                 </div>
 
             </section>
-            <section className='work-section'>
+            <section className='work-section' style={{minHeight:'100vh'}}>
                 <FeaturedWork />
             </section>
             <section>
@@ -31,6 +31,7 @@ function MainPage() {
             </section>
             <section>
                 <div>
+                    <h2 className='fs-h2'>Contact</h2>
                     <ContactForm />
                 </div>
             </section>
