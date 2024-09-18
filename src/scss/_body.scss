@@ -1,0 +1,16 @@
+@import "colors";
+@import "mixins";
+
+.light {
+    @include apply-colors($light-mode-colors);
+}
+
+.dark {
+    @include apply-colors($dark-mode-colors);
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-font);
+}

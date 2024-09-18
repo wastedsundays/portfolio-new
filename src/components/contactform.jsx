@@ -5,8 +5,8 @@ import EmailContext from './emailcontext';
 const ContactForm = () => {
     const { emailSent, setEmailSent } = useContext(EmailContext);
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
+        user_name: '',
+        user_email: '',
         message: ''
     })
 
@@ -25,19 +25,25 @@ const ContactForm = () => {
         try {
             const response = await fetch('http://localhost/mail-endpoint.php', {
                 method: 'POST',
-                header: { 
+                headers: { 
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
+
+                    // Debug response details
+                const responseText = await response.text();
+                console.log('Response Text:', responseText);
+            
             if (response.ok) {
                 // Update state to indicate email has been sent
                 setEmailSent(true);
             } else {
                 alert('Message Not Sent.');
+                // throw new Error('Network response was not ok.');
             }
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error:', error.message);
             alert('Error sending Message.');
         }
 

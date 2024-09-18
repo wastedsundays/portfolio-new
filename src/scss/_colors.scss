@@ -1,0 +1,34 @@
+$light-mode-colors: (
+    'primary-color': #046EB4,
+    'secondary-color': #4BBBF1,
+    'primary-variant-1': #044E92,
+    'primary-variant-2': #0391DC,
+    'secondary-variant-1': #B1E1FA,
+    'secondary-variant-2': #E0F4FD,
+    'background-color': #FFFFFF,
+    'surface-color': #FFFFFF,
+    'error-color': #F36C15,
+    'font-on-primary': #FFFFFF,
+    'font-on-secondary': #000000,
+    'main-font': #000000,
+    'error-font': #000000
+);
+
+$dark-mode-colors: (
+    'primary-color': #26ADEF,
+    'secondary-color': #046EB4,
+    'primary-variant-1': #4BBBF1,
+    'primary-variant-2': #B1E1FA,
+    'secondary-variant-1': #044E92,
+    'secondary-variant-2': #0391DC,
+    'background-color': #121212,
+    'surface-color': #121212,
+    'error-color': #F36C15,
+    'font-on-primary': #000000,
+    // 'font-on-secondary': #FFFFFF,
+    'font-on-secondary': rgba(255,255,255,0.87),
+    // 'main-font': #FFFFFF,
+    'main-font': rgba(255,255,255,0.87),
+    'error-font': #000000
+
+);
