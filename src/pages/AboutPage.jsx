@@ -60,6 +60,7 @@ const AboutPage = () => {
                 </div>
             </section>
             <section>
+                <h2 className="fs-h2">Contact</h2>
                     <ContactForm />
             </section>
 

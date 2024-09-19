@@ -14,3 +14,24 @@ body {
     background-color: var(--background-color);
     color: var(--main-font);
 }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'edo';
+    font-weight: 100;
+    font-size: 1.5rem;
+
+}
+
+a:hover {
+    color: var(--primary-variant-2);
+}
+
+svg {
+    fill: var(--primary-color);
+}
+
+img {
+    filter: brightness(var(--image-brightness));
+}

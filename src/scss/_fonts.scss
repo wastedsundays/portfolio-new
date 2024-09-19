@@ -4,6 +4,8 @@
     url("../fonts/edo-webfont.woff") format("woff");
   }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* font-sizes */
 :root {
     --fs-h1: 5rem;
@@ -37,5 +39,16 @@
     font-size: var(--fs-h2);
     font-family: 'Edo';
     font-weight: 100;
+}
+
+.fs-hv2 {
+    font-size: var(--fs-h1v2);
+    font-family: 'Edo';
+    font-weight: 100;
+}
+
+p {
+    font-size: var(--fs-p1);
+    font-family: 'Inter';
 }
 

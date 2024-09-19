@@ -11,7 +11,8 @@ $light-mode-colors: (
     'font-on-primary': #FFFFFF,
     'font-on-secondary': #000000,
     'main-font': #000000,
-    'error-font': #000000
+    'error-font': #000000,
+    'image-brightness': 1
 );
 
 $dark-mode-colors: (
@@ -25,10 +26,9 @@ $dark-mode-colors: (
     'surface-color': #121212,
     'error-color': #F36C15,
     'font-on-primary': #000000,
-    // 'font-on-secondary': #FFFFFF,
     'font-on-secondary': rgba(255,255,255,0.87),
-    // 'main-font': #FFFFFF,
     'main-font': rgba(255,255,255,0.87),
-    'error-font': #000000
+    'error-font': #000000,
+    'image-brightness': 0.9
 
 );

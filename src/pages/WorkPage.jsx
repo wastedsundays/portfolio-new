@@ -28,7 +28,7 @@ const WorkPage = () => {
       return (
 
         <div className='work-page'>
-            <h1 className='fs-h1'>My Work</h1>
+            <h1 className='fs-hv2'>My Work</h1>
             <div>
                 { isLoaded ?
                     <div>
