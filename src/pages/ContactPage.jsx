@@ -6,7 +6,7 @@ const ContactPage = () => {
 
         <>
             <div className='contact-page'>
-                <h1 className='fs-h2'>Hello From the Contact Page</h1>
+                <h1 className='fs-h2'>Hello!</h1>
                 <ContactForm />
             </div>
         </>

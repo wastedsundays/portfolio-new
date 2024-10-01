@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
 
-        <footer className='flex'>
+        <footer>
             <div className='copy-info'>
                 <p>&copy; {currentYear} Adam H.</p>
             </div>

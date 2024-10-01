@@ -1,6 +1,10 @@
 @import "colors";
 @import "mixins";
 
+* {
+    box-sizing: border-box;
+}
+
 .light {
     @include apply-colors($light-mode-colors);
 }
@@ -13,6 +17,8 @@
 body {
     background-color: var(--background-color);
     color: var(--main-font);
+    transition: background-color .75s ease, color .75s ease;
+    margin: 0;
 }
 
 a {
