@@ -8,9 +8,13 @@ const Navigation = () => {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState(0);
 
-    const [menuStatus, setMenuStatus] = useState("")
+    const [menuStatus, setMenuStatus] = useState("closed")
     const toggleMenu = () => {
-        setMenuStatus(menuStatus === "" ? "open" : "");
+        setMenuStatus(menuStatus === "closed" ? "open" : "closed");
+    }
+
+    const closeMenu = () => {
+        setMenuStatus("closed");
     }
 
     useEffect(() => {
@@ -38,29 +42,29 @@ const Navigation = () => {
         <>
             <header>
                 <div>
-                    <button className='hamburger-button' onClick={toggleMenu}>Menu</button>
+                    <button className='hamburger-button' onClick={toggleMenu}>{menuStatus}</button>
                 </div>
 
                 <div>
                     <nav className={`${menuStatus}`}>
                         <ul>
                             <li className={activeTab === 0 ? 'active-tab' : ''}>
-                                <Link to='/'>
+                                <Link to='/' onClick={closeMenu}>
                                     Home
                                 </Link>
                             </li>
                             <li className={activeTab === 1 ? 'active-tab' : ''}>
-                                <Link to='/work'>
+                                <Link to='/work' onClick={closeMenu}>
                                     Work
                                 </Link>
                             </li>
                             <li className={activeTab === 2 ? 'active-tab' : ''}>
-                                <Link to='/about'>
+                                <Link to='/about' onClick={closeMenu}>
                                     About
                                 </Link>
                             </li>
                             <li className={activeTab === 3 ? 'active-tab' : ''}>
-                                <Link to='/contact'>
+                                <Link to='/contact' onClick={closeMenu}>
                                     Contact
                                 </Link>
                             </li>
