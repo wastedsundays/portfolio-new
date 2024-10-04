@@ -59,7 +59,7 @@ const AboutPage = () => {
                     <p>ACF repeater field</p>
                 </div>
             </section>
-            <section>
+            <section className='contact-section'>
                 <h2 className="fs-h2">Contact</h2>
                     <ContactForm />
             </section>

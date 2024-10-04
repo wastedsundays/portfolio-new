@@ -54,6 +54,10 @@ const ContactForm = () => {
             {emailSent ? (
                 <p>Thanks for your message! I will be in touch. If you have a second message you need to send, refresh the page.</p>
             ) : (
+                <>
+
+                <p>I&apos;d love to hear from you! Whether you have a question about what I do (or about your current website), a collaboration opportunity,  or you just want to say hi, feel free to reach out.</p>
+
                 <form onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="user_name">Name</label>
@@ -71,6 +75,7 @@ const ContactForm = () => {
                         <input type="submit" value="Send" />
                     </div>
                 </form>
+                </>
             )}
         </div>
     );

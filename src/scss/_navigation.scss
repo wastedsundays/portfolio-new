@@ -4,7 +4,7 @@ header {
     right: 0;
     top: 0;
     z-index:999;
-    background-color: var(--background-color);
+    background-color: var(--nav-bg);
     transition: background-color .75s ease;
 }
 
@@ -12,10 +12,11 @@ header {
 nav {
     position: fixed;
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--nav-bg);
     width: 100%;
     transform: translateY(-100%);
     transition: background-color .75s ease, transform .5s ease;
+    backdrop-filter: blur(10px);
 
     @media screen and (min-width: 800px) {
         height: 60px;     

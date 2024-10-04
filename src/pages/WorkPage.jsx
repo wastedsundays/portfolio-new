@@ -46,8 +46,10 @@ const WorkPage = () => {
                     <Loading />
                 }
             </div>
-            <h2 className='fs-h2'>Contact</h2>
-            <ContactForm />
+            <section className='contact-section'>
+                <h2 className='fs-h2'>Contact</h2>
+                <ContactForm />
+            </section>
         </div>
 
       )

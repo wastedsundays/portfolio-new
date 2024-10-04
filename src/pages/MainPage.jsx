@@ -29,7 +29,7 @@ function MainPage() {
 
                 </div>
             </section>
-            <section>
+            <section className='contact-section'>
                 <div>
                     <h2 className='fs-h2'>Contact</h2>
                     <ContactForm />
