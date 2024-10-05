@@ -58,7 +58,7 @@ const ContactForm = () => {
 
                 <p>I&apos;d love to hear from you! Whether you have a question about what I do (or about your current website), a collaboration opportunity,  or you just want to say hi, feel free to reach out.</p>
 
-                <form onSubmit={sendEmail}>
+                <form className='depth-4' onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="user_name">Name</label>
                         <input type="text" id="user_name" name="user_name" aria-required="true" required onChange={handleChange}/>
