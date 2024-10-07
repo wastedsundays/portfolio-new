@@ -1,8 +1,10 @@
 import { useContext, useState } from 'react';
 import EmailContext from './emailcontext';
+import { useLocation } from 'react-router-dom';
 
 
 const ContactForm = () => {
+    const contactLocation = useLocation();
     const { emailSent, setEmailSent } = useContext(EmailContext);
     const [formData, setFormData] = useState({
         user_name: '',
@@ -55,9 +57,14 @@ const ContactForm = () => {
                 <p>Thanks for your message! I will be in touch. If you have a second message you need to send, refresh the page.</p>
             ) : (
                 <>
-
-                <p>I&apos;d love to hear from you! Whether you have a question about what I do (or about your current website), a collaboration opportunity,  or you just want to say hi, feel free to reach out.</p>
-
+                <div>
+                    {contactLocation.pathname === '/contact' ? (
+                        <h1 className='fs-hv2'>Contact</h1>
+                        ) : (
+                        <h2 className='fs-h2'>Contact</h2>
+                    )}
+                    <p>I&apos;d love to hear from you! Whether you have a question about what I do (or about your current website), a collaboration opportunity,  or you just want to say hi, feel free to reach out.</p>
+                </div>
                 <form className='depth-4' onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="user_name">Name</label>

@@ -31,7 +31,7 @@ img {
     --depth-12: 0px 12px 16px rgba(0, 0, 0, 0.24), 0px 4px 6px rgba(0, 0, 0, 0.23); //button selected
     --depth-8: 0px 8px 12px rgba(0, 0, 0, 0.21), 0px 3px 4px rgba(0, 0, 0, 0.19); //card selected, footer
     --depth-4: 0px 4px 6px rgba(0, 0, 0, 0.19), 0px 1px 2px rgba(0, 0, 0, 0.14); //button unselected
-    --depth-2: box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12); //card unselected
+    --depth-2: 0px 2px 4px rgba(0, 0, 0, 0.12); //card unselected
 }
 
 .depth-16 {
@@ -52,4 +52,12 @@ img {
 
 .depth-2 {
     box-shadow: var(--depth-2);
+}
+
+.card-shadow {
+    box-shadow: var(--depth-2);
+
+    &:hover {
+        box-shadow: var(--depth-8);
+    }
 }

@@ -61,7 +61,7 @@ const FeaturedWork = () => {
                     <div className="small-project"><h2 className="fs-h2">Work</h2></div>
                     {adjustedData.map((project, i) => (
                         <div className="large-project" key={i}>
-                            <div className="project-card">
+                            <div className="project-card card-shadow">
                                 {project.featured_images['medium'] && (
                                     <img srcSet={project.featured_images['medium'].srcset}/>
                                 )}

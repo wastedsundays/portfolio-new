@@ -31,7 +31,7 @@ function MainPage() {
             </section>
             <section className='contact-section'>
                 <div>
-                    <h2 className='fs-h2'>Contact</h2>
+                    {/* <h2 className='fs-h2'>Contact</h2> */}
                     <ContactForm />
                 </div>
             </section>
