@@ -3,17 +3,10 @@
     color: var(--contact-font);
     transition: color .75s ease, background-color .75s ease;
     padding: 8rem 1rem;
-
-    h2 {
-        width: clamp(300px, 95%, 1200px);
-        margin: 0 auto
-    }
-
-    
 }
 
 .contact-form {
-    width: clamp(300px, 95%, 1200px);
+    width: clamp(290px, 95%, 1200px);
     margin: 0 auto;
 
 

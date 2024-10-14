@@ -35,6 +35,9 @@ const WorkPage = () => {
                     {restData.map((projects, i) => 
                             <div className='project' key={i}>
                                 <Link to={`/work/${projects.slug}`} >
+                                {projects.featured_images['medium'] && (
+                                    <img srcSet={projects.featured_images['medium'].srcset}/>
+                                )}
                                 <h3>{projects.title.rendered}</h3>
                                 </Link>
 
@@ -47,7 +50,6 @@ const WorkPage = () => {
                 }
             </div>
             <section className='contact-section'>
-                <h2 className='fs-h2'>Contact</h2>
                 <ContactForm />
             </section>
         </div>
