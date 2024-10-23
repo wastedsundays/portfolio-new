@@ -19,8 +19,25 @@ img {
     width: 100%;
 }
 
-.featured-project {
+.featured-projects {
     width: clamp(300px,95%,1500px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 801px) {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+        
+    }
+}
+
+.featured-projects div {
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    padding: 1rem .5rem;
 }
 
 

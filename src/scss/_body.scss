@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-a {
+nav a {
     color: var(--primary-color);
     text-decoration: none;
     font-family: 'edo';
@@ -30,7 +30,7 @@ a {
 
 }
 
-a:hover {
+nav a:hover {
     color: var(--primary-variant-2);
 }
 

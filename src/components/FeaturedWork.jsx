@@ -57,7 +57,7 @@ const FeaturedWork = () => {
         <>
 
             {isFeatLoaded ? (
-                <div className="featured-project">
+                <div className="featured-projects">
                     <div className="small-project"><h2 className="fs-h2">Work</h2></div>
                     {adjustedData.map((project, i) => (
                         <div className="large-project" key={i}>
