@@ -18,10 +18,14 @@ nav {
     transition: background-color .75s ease, transform .5s ease;
     backdrop-filter: blur(10px);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @media screen and (min-width: 800px) {
         height: 60px;     
         transform: translateY(0);
-
+        display: block;
         
         ul {
             display: flex;
@@ -47,8 +51,24 @@ nav.open {
     z-index: 10000;
     right: 0;
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 50rem) {
         display: none;
         
     }
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'edo';
+    font-weight: 100;
+    font-size: 3rem;
+
+    @media screen and (min-width: 50rem) {
+        font-size: 1.5rem;
+    }
+}
+
+nav a:hover {
+    color: var(--primary-variant-2);
 }

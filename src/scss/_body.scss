@@ -21,18 +21,7 @@ body {
     margin: 0;
 }
 
-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-family: 'edo';
-    font-weight: 100;
-    font-size: 1.5rem;
 
-}
-
-nav a:hover {
-    color: var(--primary-variant-2);
-}
 
 svg {
     fill: var(--primary-color);
@@ -40,5 +29,9 @@ svg {
 
 img {
     filter: brightness(var(--image-brightness));
+}
+
+input, textarea {
+    filter:brightness(var(--input-brightness));
 }
 

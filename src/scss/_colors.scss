@@ -15,7 +15,8 @@ $light-mode-colors: (
     'font-on-secondary': #000000,
     'main-font': #000000,
     'error-font': #000000,
-    'image-brightness': 1
+    'image-brightness': 1,
+    'input-brightness': 1
 );
 
 $dark-mode-colors: (
@@ -35,6 +36,7 @@ $dark-mode-colors: (
     'font-on-secondary': rgba(255,255,255,0.87),
     'main-font': rgba(255,255,255,0.87),
     'error-font': #000000,
-    'image-brightness': 0.9
+    'image-brightness': 0.87,
+    'input-brightness': 0.92
 
 );

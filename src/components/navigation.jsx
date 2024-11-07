@@ -17,6 +17,24 @@ const Navigation = () => {
         setMenuStatus("closed");
     }
 
+    // Handle window resizing
+    const handleResize = () => {
+        if (window.innerWidth > 800) {
+            setMenuStatus("closed");  // Automatically close menu on large screens
+        }
+    };
+
+    useEffect(() => {
+        // Attach resize event listener
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup the event listener on unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    
+
     useEffect(() => {
         // Determine the active tab index based on the current location pathname
         switch (true) {
