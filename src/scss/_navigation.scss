@@ -22,6 +22,10 @@ nav {
     align-items: center;
     justify-content: center;
 
+    ul {
+        text-align: center;
+    }
+
     @media screen and (min-width: 800px) {
         height: 60px;     
         transform: translateY(0);

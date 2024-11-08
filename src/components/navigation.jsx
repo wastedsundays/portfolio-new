@@ -33,7 +33,7 @@ const Navigation = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-    
+
 
     useEffect(() => {
         // Determine the active tab index based on the current location pathname
@@ -60,7 +60,18 @@ const Navigation = () => {
         <>
             <header>
                 <div>
-                    <button className='hamburger-button' onClick={toggleMenu}>{menuStatus}</button>
+                    <button className='hamburger-button' onClick={toggleMenu}>
+                        {menuStatus}
+                        <svg className="line top-line" viewBox="0 0 30 3">
+                            <rect width="30" height="3"></rect>
+                        </svg>
+                        <svg className="line middle-line" viewBox="0 0 30 3">
+                            <rect width="30" height="3"></rect>
+                        </svg>
+                        <svg className="line bottom-line" viewBox="0 0 30 3">
+                            <rect width="30" height="3"></rect>
+                        </svg>
+                    </button>
                 </div>
 
                 <div>
